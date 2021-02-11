@@ -7,6 +7,13 @@ const PORT = process.env.PORT || 3000;
 // Connect DB
 connectDB();
 
+// Init middleware
+app.use(express.json({ extended: false })); // let to use body
+
+app.get('/', (req, res) => {
+  res.send('Api is running');
+});
+
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
