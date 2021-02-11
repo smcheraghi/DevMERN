@@ -73,11 +73,11 @@ router.post(
           if (err) {
             throw err;
           }
-          res.status(201).send({ token });
+          res.status(201).json({ token });
         }
       );
     } catch (err) {
-      console.log(err);
+      console.log(err.message);
       res.status(500).send('Server error');
     }
   }
