@@ -1,11 +1,14 @@
 const express = require('express');
 const connectDB = require('./config/db');
+const cors = require('cors'); // must be deleted
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Connect DB
 connectDB();
+
+app.use(cors()); // must be deleted
 
 // Init middleware
 app.use(express.json({ extended: false })); // let to use body
