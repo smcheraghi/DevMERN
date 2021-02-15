@@ -1,5 +1,5 @@
 {
-  "mongoURI": "mongodb+srv://mohi123:mohi123@devconnector.swcpy.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "mongoURI": "mongodb+srv://username:password@devconnector.swcpy.mongodb.net/<dbname>?retryWrites=true&w=majority",
   "privateKey": "Thisismysecretcode",
   "githubClientId": "4766660f48a27d561c53",
   "githubSecret": "11b655dc2039b391736f9371fc177de717040f8b"
